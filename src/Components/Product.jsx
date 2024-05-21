@@ -1,11 +1,11 @@
-const Product = ({span, src, alt, p, h4}) => {
+const Product = ({promotion, picture, pictureName, productName, productPrice}) => {
     return (
 
         <article>
-            <span>{span}</span>
-            <img src={src} alt={alt}/>
-            <p>{p}</p>
-            <h4>{h4}</h4>
+            <span>{promotion}</span>
+            <img src={picture} alt={pictureName}/>
+            <p>{productName}</p>
+            <h4>{productPrice}</h4>
         </article>
     );
 };
